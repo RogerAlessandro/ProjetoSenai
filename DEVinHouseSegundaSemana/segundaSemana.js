@@ -1,9 +1,8 @@
-var nome;
-var email;
-nome = window.prompt("Digite seu nome.");
-document.getElementById("nome").innerHTML = nome;
-//document.write (nome);
-email = window.prompt("Digite seu email.")
-document.getElementById("email").innerHTML = email;
-//document.write("<br>"+email);
+
+
+var a = parseFloat(window.prompt("Digite um valor."));
+var b = parseFloat(window.prompt("Some com mais este valor."));
+
+var  z = a + b;
+document.getElementById("z").innerHTML = z;
 
