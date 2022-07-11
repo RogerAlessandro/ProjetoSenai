@@ -30,4 +30,10 @@ p {
     position:fixed;
     top: 0;
 }
+.navbar2{
+    overflow: hidden;
+    display: block;
+    position:fixed;
+    top: 0;
+}
 
