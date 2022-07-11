@@ -1,8 +1,6 @@
 body {
 
     background-color: green;
-
-
 }
 
 h1 {
@@ -23,17 +21,31 @@ p {
     border-style: 2px;
     border-color: black;
     margin: 20px;
+
 }
 .navbar {
     overflow: hidden;
     display: block;
     position:fixed;
     top: 0;
+
 }
 .navbar2{
     overflow: hidden;
     display: block;
     position:fixed;
     top: 0;
+}
+
+
+.footer{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: aliceblue;
+    text-align: center;
+    color: chocolate;
+
+
 }
 
