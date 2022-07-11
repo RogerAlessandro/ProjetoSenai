@@ -1,8 +1,6 @@
+let a = 2;
+let b = -3;
+let c = 4;
 
-
-var a = parseFloat(window.prompt("Digite um valor."));
-var b = parseFloat(window.prompt("Some com mais este valor."));
-
-var  z = a + b;
-document.getElementById("z").innerHTML = z;
+console.log(a==3 && (!b<=4) || c==8);
 
