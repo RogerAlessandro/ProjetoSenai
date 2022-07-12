@@ -1,15 +1,22 @@
-var peso = parseFloat(prompt("Informe seu peso. "));
-console.log(peso);
-var altura = parseFloat(prompt("Informe sua altura. "));
-console.log(altura);
-var imc = peso / altura **2;
-console.log(imc);
-if (imc > 18.55 && imc < 24.99){
-    alert("Parabéns! Você esta no peso ideal. ");
-}else if(imc >= 25){
-alert("Você esta acima do peso. ");
-} else {
-    alert("Você esta abaixo do peso, procure um médico. ")
+var contador = 0, resposta, qtdPessoas = 0;
+while (contador < 4) {
+    resposta = window.prompt("Qual seria sua classificação para a série stranger things? ");
+
+    switch (resposta) {
+        case "ruim": qtdPessoas++;
+            break;
+        case "bom":
+            break;
+        case "excelente":
+            break;
+
+        default: resposta = window.prompt("Opções válidas são apenas Bom, Ruim ou Exelente. \n Digite novamente sua avaliação. ");
+            if (resposta == "ruim") {
+                qtdPessoas++;
+            }
+
+    }
+    contador++;
 }
 
-
+document.getElementById("resultado").innerHTML = '<h3>Quantidade de pessoas que classificou como ruim foi: ' + qtdPessoas + '</h3>'
