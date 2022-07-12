@@ -1,6 +1,4 @@
-let a = 2;
-let b = -3;
-let c = 4;
-
-console.log(a==3 && (!b<=4) || c==8);
-
+var numeroParImpar = window.prompt("Insira um numero.");
+var total = numeroParImpar % 2;
+var resultado = total % 2 == 0 ? 'Par' : 'Impar';
+document.getElementById('resultado').innerHTML = numeroParImpar + ' é ' + resultado;
