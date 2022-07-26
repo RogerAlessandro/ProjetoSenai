@@ -1,0 +1,65 @@
+<!--Crie um site com os seguintes requisitos:
+
+um campo de texto (input) onde o usuário irá digitar uma mensagem
+
+três botões:
+
+um botão “adicionar”, que no momento do clique insira a mensagem na tela
+
+um botão “salvar mensagem”, que no momento do clique salve as informações no localStorage
+opcional: se o texto estiver vazio (length), deve mostrar uma mensagem ao usuário solicitando a inserção de algum texto.
+
+um botão “mostrar mensagem”, que após o recarregamento da página, no momento do clique busque a mensagem no localStorage e exiba na tela
+opcional: se não houver mensagem cadastrada no localStorage, deve mostrará na tela: “não há ítens salvos”-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex8Semana3</title>
+
+    <!-- Adiciona bilioteca de ícones FontAwesome via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exercício com mensagens</h1>
+    <button
+        type="button"
+        style="background-color: green;"
+        onclick="salvarMensagens()"
+    >
+    <i class="fa fa-cloud-upload"></i>
+     Salvar Mensagens</button>
+    <button
+        type="button"
+        style="background-color: black;"
+        onclick="mostrarMensagens()"
+    >
+    <i class="fa fa-cloud-download"></i>
+     Mostrar Mensagens</button>
+
+    <form onsubmit="adicionar(event)" style="margin-top: 10px;">
+        <label for="msg">Mensagem</label>
+        <input
+            type="text"
+            name="mensagem"
+            id="msg"
+            placeholder="Digite a mensagem"
+            autofocus
+        >
+
+        <button
+            type="submit"
+            title="Botão que adiciona a mensagem na tela"
+        >
+        <i class="fa fa-plus-circle"></i>
+         Adicionar</button>
+    </form>
+
+    <ul id="lista"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
