@@ -1,6 +1,5 @@
 /*Crie uma classe chamada Filme com os atributos nome, 
 anoDeLancamento e diretor. Fora do escopo dessa classe, instancie ela e preencha os campos acessando seus atributos por meio do ponto (.).*/
-
 class Filme {
 
     constructor(nome, anoDeLancamento, diretor) {
@@ -10,7 +9,6 @@ class Filme {
     }
 
 }
-
 // Criando classe e definindo os valores pelo construtor
 /*var filme = new Filme('Harry Potter', '2000', 'J. K. Rowling')*/
 // Criando classe e definindo os valores pelos atributos
