@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1e592b5726.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imagens/pirataoriginal.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css" media="screen">
+    <title>DEVinKnowledge</title>
+</head>
+
+<body onload="atualizaConteudo()">
+    <main>
+        <div class="grid">
+            <section class="sectionUm">
+                <form onsubmit="formularioUsuario(event)">
+                        <header class="titulo">
+                            <img src="./imagens/pirataoriginal.png" alt="">
+                            <h1>DEVinKnowledge</h1>
+                            <br>
+                        </header>
+                        <h3 id="subtitlo">Lean, Code and Save</h3>
+                        <label for="titulo"><strong>Título :</strong></label>
+                        <input type="text" minlength="8" maxlength="64" name="titulo" placeholder="Insira um Titulo" id="titulo" required>
+                        <br>
+                        <label for="linguagemSkill"><strong>Linguagen / Skill :</strong></label>
+                        <input type="text" minlength="4" maxlength="16" name="linguagemSkill" placeholder="Informe a linguagem" id="linguagemSkill"required>
+                        <br>
+                        <label for="categoria"><strong>Categoria :</strong></label>
+                        <select id="text" name="categoria" required>
+                            <option selected disabled>Selecione uma opção</option required>
+                            <option>FrontEnd</option>
+                            <option>BackEnd</option>
+                            <option>FullStack</option>
+                            <option>SoftSkill</option>
+                        </select>
+                        <br>
+                        <label for="descricao"><strong>Descrição :</strong></label>
+                        <textarea id="descricao" name="descricao" minlength="32" maxlength="512" placeholder="Insira uma descrição ..." cols="30" rows="2" class="textarea"></textarea>
+                        <br>
+                        <label for="videoYoutube"><strong>Vídeo do Youtube :</strong></label>
+                        <input id="videoYoutube" type="url" required placeholder="Insira um vídeo do Youtube">
+                        <button id="botaoLimpa" type="reset">Limpar</button>
+                        <button id="botaoSalva" type="submit">Salvar</button>
+                </form>
+            </section>
+            <aside>
+                    <div class="grupoMenu">
+                        <div class="menuTopo">
+                            <h2>Total</h2>
+                            <h2 id="Total"></h2>
+                        </div>
+                        <div class="menuTopo">
+                            <h2>FrontEnd</h2>
+                            <h2 id="FrontEnd"></h2>
+                        </div>
+                        <div class="menuTopo">
+                            <h2>BackEnd</h2>
+                            <h2 id="BackEnd"></h1>
+                        </div>
+                        <div class="menuTopo">
+                            <h2>FullStack</h2>
+                            <h2 id="FullStack"></h2>
+                        </div>
+                        <div class="menuTopo">
+                            <h2>SoftSkill</h2>
+                            <h2 id="SoftSkill"></h2>
+                        </div>
+                    </div>
+                    <form class="formBarraPesquisa" onsubmit="pesquisarConteudo(event)">
+                        <input type="text" name="search" id="barraPesquisa" placeholder="Faça sua busca" required>
+                        <button type="submit"><i class="fas fa-search"></i> </button>
+                        <button type="reset"><i class="fas fa-eraser"></i></button>
+                    </form>
+                    <div id="conteudo">
+                    </div>
+            </aside>
+        </div>
+    </main>
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    margin: 25px;
+    display: flex;
+    background-color: #455c51;
+}
+
+main {
+    flex: 1;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 10px;
+    color: #77ffc0
+}
+
+
+.sectionUm {
+    display: flex;
+    background-color: rgb(21, 5, 46);
+    border: none;
+    border-radius: 2.5%;
+    padding: 35px;
+    margin-right: 100px;
+}
+
+aside {
+    display: block;
+    padding: 5px;
+}
+
+
+h1 {
+    color: #77ffc0;
+    display: flex;
+    margin-left: 5%;
+}
+
+.titulo {
+    display: flex;
+    font-family: monospace;
+    font-size: 40px;
+    text-align: right;
+}
+
+.titulo img {
+    border-radius: 5%;
+    width: 75px;
+    height: 75px;
+}
+
+#subtitlo {
+    font-family: monospace;
+    color: #77ffc0;
+    margin-left: 68%;
+}
+
+section form {
+    padding: 35px;
+    display: block;
+}
+
+section form header {
+    margin-bottom: 25px;
+}
+
+label {
+    font-size: 1em;
+    color: #f7de00;
+    margin: 5px 10px 5px 0;
+    margin-top: 10px;
+}
+
+
+#botaoLimpa {
+    display: flex;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(22, 6, 43);
+    background-color: #b6a61a;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(21, 4, 36);
+    margin: 10px;
+    float: left;
+}
+
+#botaoLimpa:hover {
+    background-color: #b6a61a;
+    box-shadow: 0 5px rgb(21, 4, 36);
+    transform: translateY(4px);
+}
+
+
+#botaoSalva {
+    display: flex;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(22, 6, 43);
+    background-color: #0a9922;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(21, 4, 36);
+    margin: 10px;
+    margin-left: 85%;
+}
+
+#botaoSalva:hover {
+    background-color: #0a9922;
+    box-shadow: 0 5px rgb(21, 4, 36);
+    transform: translateY(4px);
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 12px;
+    color: #ffffff;
+    border: 0;
+    border-bottom: 2px solid #f7de00;
+    border-radius: 10px;
+    outline: 0;
+    background-color: rgb(22, 6, 43);
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+
+.textarea {
+    background-color: rgb(22, 6, 43);
+    color: #ffffff;
+    width: 509px;
+    height: 286px;
+    border-radius: 2%;
+    border-color: #f7de00;
+    resize: none;
+    margin-left: 14%;
+}
+
+#text {
+    color: #ffffff;
+    background-color: rgb(43, 6, 6);
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin: 30px;
+}
+
+.menuTopo {
+    width: 110px;
+    height: 110px;
+    background-color: rgb(22, 6, 43);
+    color: #77ffc0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+aside form {
+    margin: 10px;
+    color: #77ffc0;
+}
+
+.formBarraPesquisa>input {
+    margin-left: -10px;
+    width: 88%;
+}
+
+.grupoMenu {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-column-gap: 10px;
+}
+
+overflow::-webkit-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: orange orange;
+}
+
+.conteudo {
+    margin-top: 15px;
+}
+
+
+.center {}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+
+.textarea-table{
+    resize: none;
+}
